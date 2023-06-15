@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Modificando Usuarios</h1>
+    <form action="/users/update/<%= users[0]['ID'] %>" method="POST">
+        <label for="name">Nombre</label>
+        <input type="text" name="nombre" id="nombre" value="<%= users[0]['nombre'] %>">
+        <label for="age">Edad</label>
+        <input type="text" name="edad" id="edad" value="<%= users[0]['edad'] %>">
+        <input type="submit" value="Modificar">
+    </form>
+    <script src="js/index.js"></script>
+</body>
+</html>
